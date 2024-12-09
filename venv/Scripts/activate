@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\SupriyaGudeDAFÜR\Downloads\Supriya\Resume\CERTIFICATES\Visuals\python\venv"
+VIRTUAL_ENV="C:\Projects\Weather-forcast-App\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
