@@ -3,11 +3,11 @@ import plotly.express as px
 from backend import get_data
 
 # Add title, text input, slider, selectbox, and subheader
-st.title("Weather Forecast for the Next Days")
+st.title("Weather Trends for the Week")
 city = st.text_input("City: ")
 days = st.slider("Forecast Days", min_value=1, max_value=5,
-                 help="Select the number of forecasted days")
-option = st.selectbox("Select data to view", ("Temperature", "Sky", "Humidity", "Pressure", "Wind Speed", "UV Index", "Visibility", "Cloud Coverage"))
+                 help="Set the Forecast Period")
+option = st.selectbox("Select Details to Explore", ("Temperature", "Sky", "Humidity", "Pressure", "Wind Speed", "UV Index", "Visibility", "Cloud Coverage"))
 st.subheader(f"{option} for the next {days} days in {city}")
 
 # Get the weather data
